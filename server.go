@@ -28,12 +28,12 @@ type Upgrader struct {
 	EnableCompression bool
 }
 
-// Upgrade http协议升级到WebSocket
-func (u *Upgrader) Upgrade(w http.ResponseWriter, r http.Request, responseHeader http.Header) (*Conn, error) {
-	const badHandshake = "websocket: the client is not using the websocket protocol"
-	if !tokenListContainsValues {
-
-	}
-
-	return nil, nil
-}
+//// Upgrade http协议升级到WebSocket
+//func (u *Upgrader) Upgrade(w http.ResponseWriter, r http.Request, responseHeader http.Header) (*Conn, error) {
+//	const badHandshake = "websocket: the client is not using the websocket protocol"
+//	if !tokenListContainsValues {
+//
+//	}
+//
+//	return nil, nil
+//}
