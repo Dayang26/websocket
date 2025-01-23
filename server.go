@@ -79,7 +79,10 @@ func (u *Upgrader) Upgrade(w http.ResponseWriter, r *http.Request, responseHeade
 		return u.returnError(w, r, http.StatusBadRequest, "websocket: not a websocket handshake :'Sec-WebSocket-Key' header is invalid")
 	}
 
+	// 匹配子协议
 	subprotocol := u.selectSubprotocol(r, responseHeader)
+
+	//协商压缩格式
 
 	return nil, nil
 }
