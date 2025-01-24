@@ -83,7 +83,6 @@ func (u *Upgrader) Upgrade(w http.ResponseWriter, r *http.Request, responseHeade
 	subprotocol := u.selectSubprotocol(r, responseHeader)
 
 	//协商压缩格式
-
 	return nil, nil
 }
 
